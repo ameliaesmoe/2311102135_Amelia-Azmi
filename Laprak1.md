@@ -159,7 +159,7 @@ int main() {
     return 0;
 }
 #### Output:
-![Screenshot Output Unguided 1 Class](![Alt text](<screenshoot unguided1.amelia-2.jpeg>))
+![screenshoot unguided1 amelia](https://github.com/ameliaesmoe/2311102135_Amelia-Azmi/assets/162032965/fef3f913-51f2-4402-9cdf-9da7f5a4fe5c)
 
 Kode di atas digunakan untuk melakukan operasi matematika dasar seperti penjumlahan dan perhitungan luas lingkaran.
 
@@ -230,8 +230,10 @@ int main() {
 }
 
 #### Output:
-![Screenshot Output Unguided 2.1 Class](![Alt text](<screenshoot unguided2.class.amelia.jpeg>))
-![Screenshot Output Unguided 2.2 Struct](![Alt text](<screenshoot unguided2.struct.jpeg>))
+![screenshoot unguided2 class amelia](https://github.com/ameliaesmoe/2311102135_Amelia-Azmi/assets/162032965/b2cf10b4-7844-4e92-8832-9787ebc64fcf)
+![screenshoot unguided2 struct](https://github.com/ameliaesmoe/2311102135_Amelia-Azmi/assets/162032965/163ac374-58c3-4ba5-9fbb-2f55d5a9b058)
+
+
 
 Kode Class di atas digunakan untuk mengorganisir data dan fungsi terkait identitas mahasiswa. Pada kode class ini bersifat privat, namun dapat diakses melalui metode publik.
 
@@ -277,7 +279,8 @@ int main() {
 }
 
 #### Output:
-![Screenshot Output Unguided 3 Class](![Alt text](<screenshoot unguided3.amelia.jpeg>))
+![screenshoot unguided3 amelia](https://github.com/ameliaesmoe/2311102135_Amelia-Azmi/assets/162032965/88194cd5-bc88-475d-aad1-2404829b3ca6)
+
 Kode di atas digunakan untuk menyimpan dan mengakses informasi mengenai penumpang bus berdasarkan nomor tiket mereka. Dengan menggunakan struktur data map, program dapat dengan mudah menangani pasangan kunci-nilai ini tanpa perlu memikirkan indeks seperti dalam array atau vektor.
 
 ## Perbedaan Array dengan Map:
