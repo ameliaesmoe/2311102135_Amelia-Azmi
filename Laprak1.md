@@ -159,7 +159,7 @@ int main() {
     return 0;
 }
 #### Output:
-![Screenshot Output Unguided 1 Class](![Alt text](<screenshoot unguided1.amelia-2.jpeg>))
+![Screenshot Output Unguided 1 ](<screenshoot output unguided1 .png>)
 
 Kode di atas digunakan untuk melakukan operasi matematika dasar seperti penjumlahan dan perhitungan luas lingkaran.
 
@@ -230,8 +230,8 @@ int main() {
 }
 
 #### Output:
-![Screenshot Output Unguided 2.1 Class](![Alt text](<screenshoot unguided2.class.amelia.jpeg>))
-![Screenshot Output Unguided 2.2 Struct](![Alt text](<screenshoot unguided2.struct.jpeg>))
+![Screenshot Output Unguided 2.1 Class](<screenshoot ouput unguided2class.png>)
+![Screenshot Output Unguided 2.2 Struct](<screenshoot ouput unguided 2.png>)
 
 Kode Class di atas digunakan untuk mengorganisir data dan fungsi terkait identitas mahasiswa. Pada kode class ini bersifat privat, namun dapat diakses melalui metode publik.
 
@@ -277,7 +277,7 @@ int main() {
 }
 
 #### Output:
-![Screenshot Output Unguided 3 Class](![Alt text](<screenshoot unguided3.amelia.jpeg>))
+![Screenshot Output Unguided 3 ] (<screenshoot output unguided3.png>)
 Kode di atas digunakan untuk menyimpan dan mengakses informasi mengenai penumpang bus berdasarkan nomor tiket mereka. Dengan menggunakan struktur data map, program dapat dengan mudah menangani pasangan kunci-nilai ini tanpa perlu memikirkan indeks seperti dalam array atau vektor.
 
 ## Perbedaan Array dengan Map:
