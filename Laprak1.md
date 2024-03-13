@@ -63,7 +63,7 @@ int main(){
 
     return 0;
 }
-...
+```
 Kode di atas digunakan untuk kalkulator sederhana dalam bentuk tambah, kurang, kali, bagi yang meminta pengguna untuk memasukkan operator dan dua operand. 
 
 ### 2. [tipe data abstrak]
@@ -101,7 +101,7 @@ int main(){
     printf("Umur: %d\n", mhs2.age);
     return 0;
 }
-...
+```
 
 Kode di atas digunakan untuk memberikan sebuah informasi data mahasiswa dan mencetak informasi ke layar.
 
@@ -129,7 +129,7 @@ int main() {
     cout << "Isi array kelima : " << nilai[4] << endl;
 return 0;
 }
-...
+```
 
 Kode di atas digunakan untuk memberikan sebuah informasi data mahasiswa dan mencetak informasi ke layar.
 
@@ -162,7 +162,7 @@ int main() {
 
     return 0;
 }
-...
+```
 
 #### Output:
 ![screenshoot unguided1 amelia](https://github.com/ameliaesmoe/2311102135_Amelia-Azmi/assets/162032965/fef3f913-51f2-4402-9cdf-9da7f5a4fe5c)
@@ -210,7 +210,7 @@ int main() {
 
     return 0;
 }
-...
+```
 
  //2.contoh program menggunakan struct
 
@@ -236,7 +236,7 @@ int main() {
 
     return 0;
 }
-...
+```
 
 #### Output:
 ![screenshoot unguided2 class amelia](https://github.com/ameliaesmoe/2311102135_Amelia-Azmi/assets/162032965/b2cf10b4-7844-4e92-8832-9787ebc64fcf)
@@ -286,7 +286,7 @@ int main() {
   
   return 0;
 }
-...
+```
 
 #### Output:
 ![screenshoot unguided3 amelia](https://github.com/ameliaesmoe/2311102135_Amelia-Azmi/assets/162032965/88194cd5-bc88-475d-aad1-2404829b3ca6)
