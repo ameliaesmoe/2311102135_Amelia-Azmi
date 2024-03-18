@@ -63,6 +63,7 @@ int main(){
 
     return 0;
 }
+```
 Kode di atas digunakan untuk kalkulator sederhana dalam bentuk tambah, kurang, kali, bagi yang meminta pengguna untuk memasukkan operator dan dua operand. 
 
 ### 2. [tipe data abstrak]
@@ -100,6 +101,7 @@ int main(){
     printf("Umur: %d\n", mhs2.age);
     return 0;
 }
+```
 
 Kode di atas digunakan untuk memberikan sebuah informasi data mahasiswa dan mencetak informasi ke layar.
 
@@ -127,6 +129,8 @@ int main() {
     cout << "Isi array kelima : " << nilai[4] << endl;
 return 0;
 }
+```
+
 Kode di atas digunakan untuk memberikan sebuah informasi data mahasiswa dan mencetak informasi ke layar.
 
 ## Unguided 
@@ -158,8 +162,14 @@ int main() {
 
     return 0;
 }
+```
+
 #### Output:
+<<<<<<< HEAD
 ![Screenshot Output Unguided 1 ](<screenshoot output unguided1 .png>)
+=======
+![screenshoot unguided1 amelia](https://github.com/ameliaesmoe/2311102135_Amelia-Azmi/assets/162032965/fef3f913-51f2-4402-9cdf-9da7f5a4fe5c)
+>>>>>>> 26a89edab525519a1b9b54cdc4463b89c3344055
 
 Kode di atas digunakan untuk melakukan operasi matematika dasar seperti penjumlahan dan perhitungan luas lingkaran.
 
@@ -204,9 +214,11 @@ int main() {
 
     return 0;
 }
+```
 
  //2.contoh program menggunakan struct
 
+```C++
 #include <iostream>
 using namespace std;
 
@@ -228,10 +240,18 @@ int main() {
 
     return 0;
 }
+```
 
 #### Output:
+<<<<<<< HEAD
 ![Screenshot Output Unguided 2.1 Class](<screenshoot ouput unguided2class.png>)
 ![Screenshot Output Unguided 2.2 Struct](<screenshoot ouput unguided 2.png>)
+=======
+![screenshoot unguided2 class amelia](https://github.com/ameliaesmoe/2311102135_Amelia-Azmi/assets/162032965/b2cf10b4-7844-4e92-8832-9787ebc64fcf)
+![screenshoot unguided2 struct](https://github.com/ameliaesmoe/2311102135_Amelia-Azmi/assets/162032965/163ac374-58c3-4ba5-9fbb-2f55d5a9b058)
+
+
+>>>>>>> 26a89edab525519a1b9b54cdc4463b89c3344055
 
 Kode Class di atas digunakan untuk mengorganisir data dan fungsi terkait identitas mahasiswa. Pada kode class ini bersifat privat, namun dapat diakses melalui metode publik.
 
@@ -275,9 +295,15 @@ int main() {
   
   return 0;
 }
+```
 
 #### Output:
+<<<<<<< HEAD
 ![Screenshot Output Unguided 3 ] (<screenshoot output unguided3.png>)
+=======
+![screenshoot unguided3 amelia](https://github.com/ameliaesmoe/2311102135_Amelia-Azmi/assets/162032965/88194cd5-bc88-475d-aad1-2404829b3ca6)
+
+>>>>>>> 26a89edab525519a1b9b54cdc4463b89c3344055
 Kode di atas digunakan untuk menyimpan dan mengakses informasi mengenai penumpang bus berdasarkan nomor tiket mereka. Dengan menggunakan struktur data map, program dapat dengan mudah menangani pasangan kunci-nilai ini tanpa perlu memikirkan indeks seperti dalam array atau vektor.
 
 ## Perbedaan Array dengan Map:
