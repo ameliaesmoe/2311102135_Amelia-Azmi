@@ -893,7 +893,7 @@ int main(){
 }
 ```
 #### Output:
-![screenshoot output2.1]![    
+![
 ](<Screenshoot Output 2.1.png>)
 ![
 ](<Screenshoot Output 2.2.png>)
