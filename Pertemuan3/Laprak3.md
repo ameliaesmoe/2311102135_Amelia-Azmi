@@ -628,7 +628,7 @@ int main() {
 
 ```
 #### Output:
-![Screenshoot Ouput Unguided1]![Alt text](<Screenshoot Ouput Unguided1.png>)
+![Alt text](<Screenshoot Ouput Unguided1.png>)
 
 Program tersebut merupakan implementasi dari single linked list untuk menyimpan informasi. Setiap simpul dalam linked list tersebut memiliki dua data, yaitu nama dan usia. Program ini memiliki fungsi untuk menambahkan, menghapus, mengubah, dan menampilkan data dalam linked list. Kemudian pengguna dapat memasukkan data mahasiswa, menghapus data, menambah data di awal, di tengah, mengubah data, dan menampilkan seluruh data yang telah tersimpan pada linked list. 
 
@@ -893,12 +893,7 @@ int main(){
 }
 ```
 #### Output:
-![
-](<Screenshoot Output 2.1.png>)
-![
-](<Screenshoot Output 2.2.png>)
-![
-](<Screenshoot Output2.3.png>)
+![Alt text](<Screenshoot Output 2.1.png>)![Alt text](<Screenshoot Output 2.2.png>)![Alt text](<Screenshoot Output2.3.png>)
 
 Program tersebut merupakan sebuah implementasi dari struktur data double linked dalam bahasa C++. Struktur data ini digunakan untuk menyimpan informasi tentang produk skincare, seperti nama produk dan harganya. Program ini menyediakan berbagai fungsi dasar untuk operasi-operasi pada linked list, termasuk penambahan data, penghapusan data, pembaruan data, dan penampilan data. 
 
