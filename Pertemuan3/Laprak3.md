@@ -1,5 +1,5 @@
 # <h1 align="center">Laporan Praktikum Modul Single and Double Linked List</h1>
-<p align="center">Amelia Azmi_135</p>
+<p align="center">Amelia Azmi_2311102135</p>
 
 ## Dasar Teori
 
