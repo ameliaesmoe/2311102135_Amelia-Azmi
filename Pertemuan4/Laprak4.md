@@ -20,16 +20,20 @@ struct node
     int data;
     node *next;
 }
+```
 
 2. Membuat dan Menginisialisasi Pointer Head dan Tail
+```C++
 node *head, *tail;
 void init()
 {
     head = NULL;
     tail = NULL;
 };
+```
 
 3. Pengecekan Kondisi Linked List
+```C++
 bool isEmpty()
 {
     if (head == NULL && tail == NULL)
@@ -63,6 +67,7 @@ void insertBelakang(string dataUser)
             tail = baru;
             }
 };
+```
 
 5. Penghapusan Simpul (Node)
 ```C++
@@ -89,6 +94,7 @@ void hapusDepan()
             }
         }
 }
+```
 
 6.  Tampil Data Linked List
 ```C++
@@ -133,8 +139,10 @@ void init()
     head = NULL;
     tail = head;
 }
+```
 
 3.  Pengecekan Kondisi Linked List
+```C++
 int isEmpty()
 {
     if (head == NULL)
@@ -143,6 +151,7 @@ int isEmpty()
     return 0; // false
 }
 ```
+
 4.  Pembuatan Simpul (Node)
 ```C++
 void buatNode(string data)
@@ -152,6 +161,7 @@ void buatNode(string data)
     baru->next = NULL;
 }
 ```
+
 5. Penambahan Simpul (Node)
 ```C++
 // Tambah Depan
@@ -178,6 +188,7 @@ void insertDepan(string data)
         }
 }
 ```
+
 6. Penghapusan Simpul (Node)
 ```C++
 void hapusBelakang()
@@ -208,6 +219,7 @@ void hapusBelakang()
                         }
 }
 ```
+
 7.  Menampilkan Data Linked List
 ```C++
 oid tampil()
