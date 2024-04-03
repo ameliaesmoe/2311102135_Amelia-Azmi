@@ -14,6 +14,7 @@ a). Single : field pointer-nya hanya satu arah, pada akhir not pointer-nya menun
 b). Linked List : Node - node tersebut saling terhubung satu sama lain setiap node pada linked list mempunyai field yang berisi pointer ke node berikutnya, dan juga memiliki field yang berisi data. Mode terakhir akan menunjuk NULL yang akan digunakan sebagai kondisi berhenti pada saat pembacaan isi linked list. 
 
 1.  Deklarasi Simpul (Node)
+```C++
 struct node
 {
     int data;
@@ -40,8 +41,9 @@ bool isEmpty()
             return false;
             }
 }
-
+```
 4. Penambahan Simpul (Node)
+```C++
 void insertBelakang(string dataUser)
 {
     if (isEmpty() == true)
@@ -63,6 +65,7 @@ void insertBelakang(string dataUser)
 };
 
 5. Penghapusan Simpul (Node)
+```C++
 void hapusDepan()
 {
     if (isEmpty() == true)
@@ -88,6 +91,7 @@ void hapusDepan()
 }
 
 6.  Tampil Data Linked List
+```C++
 void tampil()
 {
     if (isEmpty() == true)
@@ -105,7 +109,7 @@ void tampil()
              }
         }
 }
-
+```
 
 
 2. Linked list circular 
@@ -113,13 +117,16 @@ void tampil()
 Circural linked list adalah suatu linked list yang tidak memiliki nilai nil / NULL untuk medan sambungannya. Circular Linked List dapat dilakukan terhadap Singly Linked List maupun Doubly Linked List. Dalam Circular Linked List tidak terdapat suatu simpul yang bernilai NULL. Hal ini terjadi karena simpul terakhir dihubungkan terhadap simpul pertama untuk Single Linked List dan simpul pertama dengan simpul terakhir saling terhubung untuk Double Linked List. 
 
 1. Deklarasi Simpul (Node)
+```C++
 struct Node
 {
     string data;
     Node *next;
 };
+```
 
 2.  Membuat dan Menginisialisasi Pointer Head dan Tail
+```C++
 Node *head, *tail, *baru, *bantu, *hapus;
 void init()
 {
@@ -135,16 +142,18 @@ int isEmpty()
     else
     return 0; // false
 }
-
+```
 4.  Pembuatan Simpul (Node)
+```C++
 void buatNode(string data)
 {
     baru = new Node;
     baru->data = data;
     baru->next = NULL;
 }
-
+```
 5. Penambahan Simpul (Node)
+```C++
 // Tambah Depan
 void insertDepan(string data)
 {
@@ -168,8 +177,9 @@ void insertDepan(string data)
             tail->next = head;
         }
 }
-
+```
 6. Penghapusan Simpul (Node)
+```C++
 void hapusBelakang()
 {
     if (isEmpty() == 0)
@@ -197,9 +207,10 @@ void hapusBelakang()
                         delete hapus;
                         }
 }
-
+```
 7.  Menampilkan Data Linked List
-void tampil()
+```C++
+oid tampil()
 {
     if (isEmpty() == 0)
     {
@@ -212,7 +223,7 @@ void tampil()
             cout << endl;
             }
 }
- 
+ ```
 ## Guided 
 
 ### 1. [Linked List Non-Circular]
