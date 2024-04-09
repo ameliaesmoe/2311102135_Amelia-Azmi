@@ -1,5 +1,5 @@
 # <h1 align="center">Laporan Praktikum Modul 5 Hash Table</h1>
-<p align="center">Amelia Azmi_2311102135r</p>
+<p align="center">Amelia Azmi_2311102135</p>
 
 ## Dasar Teori
 
