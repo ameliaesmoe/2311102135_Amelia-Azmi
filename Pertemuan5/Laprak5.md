@@ -3,13 +3,13 @@
 
 ## Dasar Teori
 
-# 1. Pengertian Hash table 
+#### 1. Pengertian Hash table 
 
 Struktur data Hash Table adalah struktur data yang digunakan untuk menyimpan dan mengelola data dengan cepat dan efisien. Ini beroperasi dengan prinsip kunci-nilai, di mana setiap elemen data memiliki kunci yang unik yang digunakan untuk mengakses atau memanipulasinya. 
 
 Hash Table (Tabel Hash) adalah struktur data yang mengorganisir data ke dalam pasangan kunci-nilai. Ini menggunakan fungsi hash untuk mengonversi kunci menjadi indeks dalam array.
 
-# 2. Struktur dan Fungsi pada Hash Table 
+#### 2. Struktur dan Fungsi pada Hash Table 
 Hash table menggunakan struktur data array asosiatif yang mengasosiasikan record dengan sebuah field kunci unik berupa bilangan (hash) yang merupakan representasi dari record tersebut. Misalnya, terdapat data berupa string yang hendak disimpan dalam sebuah hash table. String tersebut direpresentasikan dalam sebuah field kunci k. Cara untuk mendapatkan field kunci ini sangatlah beragam, namun hasil akhirnya adalah sebuah bilangan hash yang digunakan untuk menentukan lokasi record.
 
 Jenis fungsi hash yang dapat digunakan dalam struktur data tabel hash, antara lain:
@@ -28,7 +28,7 @@ Operasi Pada Hash Tabel :
 6. Resize: Operasi ini digunakan untuk mengubah ukuran Hash Table jika jumlah elemen/data yang disimpan melebihi kapasitas yang ditentukan. Resize dilakukan untuk menjaga efisiensi dan kinerja Hash Table.
 7. Iterasi: Operasi yang digunakan untuk mengakses dan memproses semua elemen/data yang ada dalam Tabel Hash secara berurutan.
 
-# 3. Kelebihan dan kekurangan dalam menggunakan Hash Table
+#### 3. Kelebihan dan kekurangan dalam menggunakan Hash Table
 
 ~ Kelebihan Hash table meliputi efisiensi waktu operasi seperti insert, delete, dan search yang cepat dengan waktu rata-rata O(1). Selain itu, hash table ideal untuk data dengan frekuensi operasi yang tinggi dan menggunakan algoritma hashing untuk mempercepat pencarian data. Selain efisien dalam penggunaan memori dengan efisiensi tinggi, tabel hash juga memiliki teknik-teknik seperti hashing terbuka, rantai terpisah, dan hashing tertutup untuk mengurangi kemungkinan tabrakan dalam penyimpanan data.
 
@@ -538,9 +538,9 @@ int main(){
             break;
     }
 ```
-#### Output:
+### Output:
 
-## Menambahkan Data Mahasiswa
+#### Menambahkan Data Mahasiswa
 
 ![Alt text](<../Screenshoot 1.1.png>)
 
@@ -550,15 +550,15 @@ int main(){
 
 ![Alt text](<../Screenshoot 1.4.png>)
 
-## Mencari Data NIM Mahaiswa
+#### Mencari Data NIM Mahaiswa
 
 ![Alt text](<../Screenshoot mencari nim.png>)
 
-## Mencari Data Rentang Nilai Mahasiswa
+#### Mencari Data Rentang Nilai Mahasiswa
 
 ![Alt text](<../Screenshoot rentan nilai.png>)
 
-## Menghapus Data Mahasiswa
+#### Menghapus Data Mahasiswa
 
 ![Alt text](<../Screenshoot hapus data.png>)
 
