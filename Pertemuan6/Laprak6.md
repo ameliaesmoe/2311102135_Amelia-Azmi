@@ -89,15 +89,23 @@ void print() {
 #### Kelebihan dan kekurangan dalam menggunakan Stack:
 
 1. Kelebihan
+
 ~ Menggunakan metode LIFO untuk membantu mengelola data dengan mudah dan efektif.
+
 ~ Secara otomatis membersihkan objek yang tidak lagi diperlukan.
+
 ~ Tidak mudah rusak karena ukuran variabel yang tetap.
+
 ~ Ukuran variabel tidak dapat diubah.
+
 ~ Mengontrol memori secara mandiri.
 
 2. Kekurangan
+
 ~ Memori stack cenderung terbatas.
+
 ~ Ada kemungkinan stack akan meluap atau overflow jika objek terlalu banyak dimasukan.
+
 ~ Tidak dapat mengakses data secara acak, karena harus mengeluarkan tumpukan paling atas terlebih dahulu untuk membuat proses pencarian menjadi lebih terstruktur dan berurutan.
 
 ### 1. [Guided]
