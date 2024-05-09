@@ -88,7 +88,7 @@ void print() {
 ```
 #### Kelebihan dan kekurangan dalam menggunakan Stack:
 
-1. Kelebihan
+##### 1. Kelebihan
 
 ~ Menggunakan metode LIFO untuk membantu mengelola data dengan mudah dan efektif.
 
@@ -100,7 +100,7 @@ void print() {
 
 ~ Mengontrol memori secara mandiri.
 
-2. Kekurangan
+##### 2. Kekurangan
 
 ~ Memori stack cenderung terbatas.
 
