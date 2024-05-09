@@ -464,4 +464,6 @@ Stack adalah struktur data yang mengikuti prinsip last-in, first-out (LIFO), yan
 
 [1] J Sihombing. Penerapan Stack dan Queue Pada Array dan Linked List Dalam Java. 2019.
 
-[2] Mochamad Fajar Wicaksono, S.Kom., M.Kom.. Percabangan, Stack, Subrutin dan Delay. 2020. Unikom : Bandung.
+[2] Muhammad Nugraha, Dasar Pemrograman Dengan C++, Materi Paling Dasar untuk Menjadi Programmer Berbagai Platform. 2021 Yogyakarta: Deepublish.
+
+[3] Mochamad Fajar Wicaksono, S.Kom., M.Kom.. Percabangan, Stack, Subrutin dan Delay. 2020. Unikom : Bandung.
