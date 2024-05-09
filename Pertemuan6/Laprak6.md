@@ -86,6 +86,17 @@ void print() {
         }
 }
 ```
+#### Kelebihan dan kekurangan dalam menggunakan Stack:
+###### 1. Kelebihan
+Menggunakan metode LIFO untuk membantu mengelola data dengan mudah dan efektif.
+secara otomatis membersihkan objek yang tidak lagi diperlukan.
+tidak mudah rusak karena ukuran variabel yang tetap.
+ukuran variabel tidak dapat diubah.
+mengontrol memori secara mandiri.
+###### 2. Kekurangan
+memori stack cenderung terbatas.
+ada kemungkinan stack akan meluap atau overflow jika objek terlalu banyak dimasukan.
+tidak dapat mengakses data secara acak, karena harus mengeluarkan tumpukan paling atas terlebih dahulu untuk membuat proses pencarian menjadi lebih terstruktur dan berurutan.
 
 ### 1. [Guided]
 
@@ -232,7 +243,7 @@ Kode diatas merupakan sebuah implementasi dari struktur data stack menggunakan a
 
 ### 1. [Buatlah program untuk menentukan apakah kalimat tersebut yang diinputkan dalam program stack adalah palindrom/tidak. Palindrom kalimat yang dibaca dari depan dan belakang sama. Jelaskan bagaimana cara kerja programnya.]
 
-Contoh:
+####Contoh:
 Kalimat : ini
 Kalimat tersebut adalah polindrom
 Kalimat : telkom
@@ -241,44 +252,197 @@ Kalimat tersebut adalah bukan polindrom
 ![Alt text](U1.png)
 
 ```C++
+//Edited by amelia azmi_2311102135
 #include <iostream>
+#include <string>
+#include <algorithm>
 using namespace std;
 
+// Fungsi untuk memeriksa apakah sebuah kalimat adalah palindrom
+bool isPalindrome_135(const string& kal) {
+    string strippedSentence_135;
+
+    // Menghapus spasi dan tanda baca dari kalimat, dan mengonversi huruf menjadi lowercase
+    for (char r047 : kal) {
+        if (isalpha(r047)) {
+            strippedSentence_135 += tolower(r047); // Menambahkan karakter yang valid ke dalam kalimat tanpa tanda baca dan spasi
+        }
+    }
+
+    string reversedSentence_135 = strippedSentence_135;
+    reverse(reversedSentence_135.begin(), reversedSentence_135.end()); 
+    // Membalikkan kalimat untuk memeriksa apakah sama dengan kalimat asli
+    
+    return strippedSentence_135 == reversedSentence_135; // Mengembalikan nilai true jika kalimat adalah palindrom, dan false jika tidak
+}
+
 int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
-    return 0;
+    string kal;
+    cout << "Masukkan kalimat: ";
+    getline(cin, kal);
+
+    bool isPalindrom_135 = isPalindrome_135(kal); // Memanggil fungsi isPalindrome untuk memeriksa apakah kalimat adalah palindrom atau tidak
+
+    cout << "Kalimat: " << kal << endl;
+
+    // Menampilkan hasil apakah kalimat adalah palindrom atau tidak
+    if (isPalindrom_135) {
+        cout << "Kalimat tersebut adalah palindrom." << endl;
+    } else {
+        cout << "Kalimat tersebut bukan palindrom." << endl;
+    }
+
+    return 0; // Mengembalikan nilai 0, menandakan bahwa program berjalan dengan sukses
 }
 ```
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+![Alt text](Unguided1.1.png)
+![Alt text](Unguided1.2.png)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Kode diatas merupakan sebuah program yang dirancang untuk memeriksa apakah sebuah kalimat yang telah dimasukkan pengguna merupakan palindrom atau tidak. Palindrom adalah sebuah kata, frasa, angka, atau urutan lainnya yang dapat dibaca sama baik dari depan maupun dari belakang. Pertama, program meminta pengguna untuk memasukkan sebuah kalimat menggunakan fungsi `getline(cin, kal)`. Setelah mendapatkan input, program memproses kalimat tersebut untuk membersihkan dari spasi dan tanda baca. Hal ini dilakukan dengan menggunakan sebuah loop for yang mengiterasi setiap karakter dalam kalimat. Jika karakter tersebut merupakan huruf (diperiksa dengan fungsi `isalpha()`), maka karakter tersebut ditambahkan ke dalam string `strippedSentence_135` setelah diubah menjadi huruf kecil dengan fungsi `tolower()`. Ini memastikan bahwa perbandingan antara kalimat asli dan kalimat yang dibalik tidak terpengaruh oleh perbedaan huruf besar kecil. Selanjutnya, program membuat sebuah salinan terbalik dari kalimat yang telah dibersihkan dengan menggunakan fungsi `reverse()` dari library `<algorithm>`. Setelah mendapatkan kalimat yang terbalik, program membandingkannya dengan kalimat asli. Jika kedua kalimat tersebut sama, maka kalimat tersebut merupakan palindrom, dan program mengeluarkan pesan yang sesuai. Kemudian, program menampilkan pesan apakah kalimat tersebut merupakan palindrom atau tidak berdasarkan hasil perbandingan yang telah dilakukan. Hal ini dilakukan melalui sebuah kondisi if-else yang memeriksa nilai yang dikembalikan oleh fungsi `isPalindrome_135`. Selanjutnya program mengembalikan nilai 0 dari fungsi `main()` sebagai tanda bahwa program telah selesai dijalankan dengan sukses.
 
 ### 2. [Buatlah program untuk melakukan pembalikan terhadap kalimat menggunakan stack dengan minimal 3 kata. Jelaskan output program dan source codenya beserta operasi/fungsi yang dibuat?]
 
-Contoh
+####Contoh
 Kalimat : Telkom Purwokerto
 Hasil : otrekowruP mokleT
 
 ![Alt text](U2.png)
 
 ```C++
-#include <iostream>
+//Edited by amelia azmi_2311102135
+#include<iostream>
+
 using namespace std;
 
-int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
+const int Max_135 = 100;
+string ArrayKalimat_135 [Max_135 ]; //deklarasi array bernama ArrayKalimat sebagai stack
+int Top_135  = 0;
+
+//fungsi isEmpty untuk mengecek apakah stack kosong atau tidak
+bool isEmpty(){
+    return (Top_135  == 0);
+}
+
+//prosedur PushKata_135  untuk menambahkan kata pada stack
+void PushKata_135 (string InputKata_135 ){
+    if(!InputKata_135 .empty()){  // Periksa apakah input kata tidak kosong
+        ArrayKalimat_135 [Top_135 ] = InputKata_135 ;
+        Top_135 ++;
+    }
+}
+
+//prosedur PopKata_135  untuk mengeluarkan elemen pertama pada stack
+void PopKata_135 (){
+    if(Top_135  > 0){
+        ArrayKalimat_135 [Top_135  - 1] = "";
+        Top_135 --;
+    }
+}
+
+//fungsi HitungKata_135  untuk menghitung jumlah kata yang diinputkan user
+int HitungKata_135 (const char* InputKata_135 ){
+    int JumlahKata_135  = 0;
+    int i = 0;
+    while (InputKata_135 [i] != '\0') {
+        // Jika karakter saat ini bukan spasi dan karakter selanjutnya adalah spasi atau null terminator,
+        // itu menandakan bahwa kata baru dimulai.
+        if (InputKata_135 [i] != ' ' && (InputKata_135 [i + 1] == ' ' || InputKata_135 [i + 1] == '\0')) {
+            JumlahKata_135 ++;
+        }
+        i++;
+    }
+    return JumlahKata_135 ;
+}
+
+//Fungsi BalikKatav untuk membalikkan urutan huruf pada kata di kalimat yang diinputkan user
+string BalikKata_135 (const char* InputKata_135 ){
+    string KalimatTerbalik_135 ; //variabel untuk menampung kata yang sudah terbalik secara keseluruhan
+    string KataBelumTerbalik_135 ;  // variabel untuk menampung kata sementara yang belum dibalik
+    string KataSudahTerbalik_135 ; //variabel untuk menampung kata sementara yang sudah dibalik
+    int i = 0;
+    //perulangan while
+    while (InputKata_135 [i] != '\0') { //jika setiap elemen pada InputKata_135  bukan spasi, maka lanjutkan
+        char Huruf_135  = InputKata_135 [i]; //masukkan setiap elemen pada InputKata_135  pada variabel Huruf_135 
+        //percabangan if-else
+        if (Huruf_135  != ' ') { //jika karakter yang sedang diproses bukan spasi, maka lanjutkan
+            KataBelumTerbalik_135  += Huruf_135 ; //tambahkan karakter bukan spasi ke dalam KataBelumTerbalik_135 
+        } else { //jika karakter yang sedang diproses adalah spasi, maka lanjutkan
+            int PanjangKata_135 = KataBelumTerbalik_135 .length(); //Hitung panjang kata pada KataBelumTerbalik_135 
+            for (int j = PanjangKata_135  - 1; j >= 0; --j) {
+                KataSudahTerbalik_135  += KataBelumTerbalik_135 [j]; //balikkan kata pada KataBelumTerbalik_135  dan masukkan kedalam KataSudahTerbalik_135 
+            }
+            //Tambahkan kata yang sudah terbalik ke dalam stack menggunakan PushKata_135 
+            if (!KataSudahTerbalik_135 .empty()) {
+                PushKata_135 (KataSudahTerbalik_135 );
+            }
+            KataBelumTerbalik_135 = "";  // Kosongkan KataBelumTerbalik_135  untuk menampung kata baru
+            KataSudahTerbalik_135  = "";  // Kosongkan KataBelumTerbalik_135  untuk menampung kata baru
+        }
+        ++i;
+    }
+    // Balik kata terakhir jika setelah kata tersebut tidak diikuti oleh spasi
+    if(!KataBelumTerbalik_135 .empty()) {
+        int PanjangKata_135  = KataBelumTerbalik_135 .length(); //Hitung panjang kata 
+        for (int j = PanjangKata_135  - 1; j >= 0; --j) {
+            KataSudahTerbalik_135 += KataBelumTerbalik_135 [j]; //balikkan kata dan masukkan kedalam KataSudahTerbalik_135 
+        }
+        if (!KataSudahTerbalik_135.empty()) { //Tambahkan kata yang sudah terbalik ke dalam stack menggunakan PushKata_135 
+            PushKata_135(KataSudahTerbalik_135);
+        }
+    }
+    
+    //keluarkan kata yang sudah dibalik dari stack
+    while(!isEmpty()){
+        KalimatTerbalik_135 += ArrayKalimat_135[Top_135 - 1]; //masukkan kata yang sudah dibalik kedalam KalimatTerbalik_135 
+        PopKata_135(); //keluarkan KalimatTerbalik_151 menggunakan PopKata_135 
+        if (!isEmpty()) { // Jika stack belum kosong, tambahkan spasi di antara kata yang sudah dibalik
+            KalimatTerbalik_135 += " ";
+        }
+    }
+    return KalimatTerbalik_135; //kembalikan nilai KalimatTerbalik_135 
+}
+
+int main(){
+    char InputKata_135[Max_135];
+    string KalimatTerbalik_135, hasil_135;
+    cout << "================ PEMBALIK KALIMAT ================" << endl;
+    cout << "Anda dapat memasukkan minimal 2 kata untuk dibalik" << endl;
+    MasukkanKalimat:
+    cout << "Masukkan kalimat (minimal 2 kata) = ";
+    cin.getline(InputKata_135 , Max_135);  //Kalimat yang diinputkan user dimasukkan kedalam array InputKata_135 
+
+    //Pengecekan apakah kata yang diinputkan user lebih dari 2 atau tidak
+    if(HitungKata_135(InputKata_135) < 2){ //Jika kata yang dimasukkan user kurang dari 2 maka user harus memasukkan kalimat lagi 
+        cout << "Jumlah kata = " << HitungKata_135(InputKata_135) << endl;
+        cout << "Kata yang telah anda masukkan kurang dari 2, silahkan masukkan ulang kalimat anda" << endl;
+        cout << endl;
+        goto MasukkanKalimat;
+    } else { //jika kata yang diinputkan user lebih dari sama dengan 2 maka tampilkan urutan huruf setiap kata pada kalimat secara terbalik
+        cout << "Jumlah kata = " << HitungKata_135(InputKata_135) << endl;
+        hasil_135 = BalikKata_135(InputKata_135);
+        cout << "Kalimat yang dibalik menjadi " << hasil_135 << endl;
+    }
+    
     return 0;
 }
 ```
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+![Alt text](Unguided2.png)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Program 
+Program diatas merupakan sebuah implementasi dalam bahasa C++ yang bertujuan untuk membalikkan urutan huruf dalam setiap kata dari sebuah kalimat yang dimasukkan oleh pengguna. Dengan menggunakan struktur data stack, program ini memproses kalimat secara bertahap untuk menghasilkan kalimat yang terbalik secara keseluruhan.
 
+Pertama-tama, program memulai dengan mendeklarasikan beberapa variabel yang diperlukan, seperti `ArrayKalimat_135` yang berperan sebagai stack untuk menampung kata-kata dalam kalimat, `Top_135` yang menyimpan indeks atas dari stack, dan `Max_135` sebagai batas maksimum dari stack. Kemudian, program juga mendeklarasikan variabel lain seperti `InputKata_135` untuk menampung kalimat yang dimasukkan oleh pengguna, serta variabel `KalimatTerbalik_135` dan `hasil_135` untuk menampung hasil dari pemrosesan kalimat.
+
+Selanjutnya, program mendefinisikan beberapa fungsi dan prosedur yang digunakan dalam proses pembalikan kata-kata, seperti `isEmpty()` untuk memeriksa apakah stack kosong, `PushKata_135()` untuk menambahkan kata ke dalam stack, `PopKata_135()` untuk mengeluarkan elemen teratas dari stack, `HitungKata_135()` untuk menghitung jumlah kata dalam kalimat yang dimasukkan pengguna, dan `BalikKata_135()` untuk membalikkan urutan huruf dalam setiap kata dalam kalimat.
+
+Fungsi utama `main()` kemudian dimulai dengan meminta pengguna untuk memasukkan kalimat. Program melakukan validasi apakah kalimat yang dimasukkan mengandung minimal 2 kata. Jika tidak memenuhi syarat, program akan meminta pengguna untuk memasukkan kalimat lagi. Namun, jika kalimat memenuhi syarat, program akan memanggil fungsi `BalikKata_135()` untuk membalikkan urutan huruf dalam setiap kata. Setelah itu, program akan menampilkan hasil balikan kata-kata tersebut kepada pengguna.
+
+Secara keseluruhan, program ini memberikan pengalaman interaktif kepada pengguna untuk memasukkan kalimat dan melihat hasilnya yang sudah dibalik urutan kata-katanya. Dengan menggunakan konsep stack dan pemrosesan string, program ini memberikan solusi untuk membalikkan kalimat secara efisien dalam bahasa C++.
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Stack adalah struktur data yang mengikuti prinsip last-in, first-out (LIFO), yang berarti elemen terakhir yang dimasukkan adalah elemen pertama yang dikeluarkan. Struktur data stack memiliki operasi dasar seperti create, isEmpty, isFull, push, pop, clear, dan retrieve. Dalam implementasinya, sebuah stack dapat dideklarasikan menggunakan array dan memiliki fungsi-fungsi yang memungkinkan untuk manipulasi data di dalamnya, seperti menambahkan (push) dan mengeluarkan (pop) elemen, serta mengambil nilai dari elemen teratas.
 
 ## Referensi
 
