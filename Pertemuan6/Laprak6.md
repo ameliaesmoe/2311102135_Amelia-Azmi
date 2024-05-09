@@ -87,16 +87,18 @@ void print() {
 }
 ```
 #### Kelebihan dan kekurangan dalam menggunakan Stack:
-###### 1. Kelebihan
-Menggunakan metode LIFO untuk membantu mengelola data dengan mudah dan efektif.
-secara otomatis membersihkan objek yang tidak lagi diperlukan.
-tidak mudah rusak karena ukuran variabel yang tetap.
-ukuran variabel tidak dapat diubah.
-mengontrol memori secara mandiri.
-###### 2. Kekurangan
-memori stack cenderung terbatas.
-ada kemungkinan stack akan meluap atau overflow jika objek terlalu banyak dimasukan.
-tidak dapat mengakses data secara acak, karena harus mengeluarkan tumpukan paling atas terlebih dahulu untuk membuat proses pencarian menjadi lebih terstruktur dan berurutan.
+
+1. Kelebihan
+~ Menggunakan metode LIFO untuk membantu mengelola data dengan mudah dan efektif.
+~ Secara otomatis membersihkan objek yang tidak lagi diperlukan.
+~ Tidak mudah rusak karena ukuran variabel yang tetap.
+~ Ukuran variabel tidak dapat diubah.
+~ Mengontrol memori secara mandiri.
+
+2. Kekurangan
+~ Memori stack cenderung terbatas.
+~ Ada kemungkinan stack akan meluap atau overflow jika objek terlalu banyak dimasukan.
+~ Tidak dapat mengakses data secara acak, karena harus mengeluarkan tumpukan paling atas terlebih dahulu untuk membuat proses pencarian menjadi lebih terstruktur dan berurutan.
 
 ### 1. [Guided]
 
@@ -243,10 +245,14 @@ Kode diatas merupakan sebuah implementasi dari struktur data stack menggunakan a
 
 ### 1. [Buatlah program untuk menentukan apakah kalimat tersebut yang diinputkan dalam program stack adalah palindrom/tidak. Palindrom kalimat yang dibaca dari depan dan belakang sama. Jelaskan bagaimana cara kerja programnya.]
 
-####Contoh:
+Contoh:
+
 Kalimat : ini
+
 Kalimat tersebut adalah polindrom
+
 Kalimat : telkom
+
 Kalimat tersebut adalah bukan polindrom
 
 ![Alt text](U1.png)
@@ -303,8 +309,10 @@ Kode diatas merupakan sebuah program yang dirancang untuk memeriksa apakah sebua
 
 ### 2. [Buatlah program untuk melakukan pembalikan terhadap kalimat menggunakan stack dengan minimal 3 kata. Jelaskan output program dan source codenya beserta operasi/fungsi yang dibuat?]
 
-####Contoh
+Contoh :
+
 Kalimat : Telkom Purwokerto
+
 Hasil : otrekowruP mokleT
 
 ![Alt text](U2.png)
@@ -446,5 +454,6 @@ Stack adalah struktur data yang mengikuti prinsip last-in, first-out (LIFO), yan
 
 ## Referensi
 
-[1] J Sihombing. Penerapan Stack dan Queue Pada Array dan Linked List Dalam Java. 2019
+[1] J Sihombing. Penerapan Stack dan Queue Pada Array dan Linked List Dalam Java. 2019.
+
 [2] Mochamad Fajar Wicaksono, S.Kom., M.Kom.. Percabangan, Stack, Subrutin dan Delay. 2020. Unikom : Bandung.
