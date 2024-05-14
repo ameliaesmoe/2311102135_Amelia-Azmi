@@ -7,7 +7,7 @@ queue (antrian) adalah suatu jenis struktur data yang dapat diproses dengan sifa
 
 #### Ilustrasi Proses Queue
 
-![Alt text](<../Ilustrasi qeueu.png>)
+![Alt text](<Ilustrasi qeueu.png>)
 
 #### Deklarasi Struktur Data Queue
 
