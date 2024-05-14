@@ -293,7 +293,7 @@ int main(){
 ```
 #### Output:
 
-![Alt text](../Unguided1.png)
+![Alt text](Unguided1.png)
 
 Program di atas merupakan implementasi struktur data antrian (queue) menggunakan linked list dalam bahasa C++. Antrian diwakili oleh struct `node`, yang berisi data `nama_135` dan pointer `next` untuk menunjuk ke node berikutnya. Dua pointer global, `front` dan `back`, digunakan untuk melacak elemen pertama dan terakhir dari antrian. Prosedur `Inisialisasi_135` mengatur `front` dan `back` menjadi `NULL` untuk mengindikasikan bahwa antrian kosong pada awalnya. Fungsi `isEmpty_135` memeriksa apakah antrian kosong dengan memeriksa apakah `front` adalah `NULL`. Prosedur `TambahData_135` menambahkan elemen baru ke antrian: jika antrian kosong, elemen baru menjadi `front` dan `back`; jika tidak, elemen baru ditambahkan di akhir antrian dan `back` diperbarui. Prosedur `KurangiAntrian_135` menghapus elemen pertama dari antrian, memperbarui `front` ke elemen berikutnya, atau mengatur `front` dan `back` ke `NULL` jika hanya ada satu elemen. Fungsi `HitungAntrian_151` menghitung jumlah elemen dalam antrian dengan melintasi seluruh elemen dari `front` ke `back`. Prosedur `HapusAntrian_135` menghapus semua elemen dalam antrian dengan melintasi dan menghapus setiap elemen satu per satu, kemudian mengatur `front` dan `back` ke `NULL`. Prosedur `LihatAntrian_135` menampilkan semua elemen dalam antrian; jika antrian kosong, menampilkan pesan "Antrian kosong!". Fungsi `main` menambahkan tiga nama ke dalam antrian, menampilkan antrian, menghapus satu elemen, menampilkan antrian setelah penghapusan, menghapus seluruh antrian, dan menampilkan antrian setelah semua elemen dihapus. Program ini menggambarkan operasi dasar antrian seperti penambahan, penghapusan, pengecekan, dan penghapusan keseluruhan menggunakan linked list.
 
@@ -483,11 +483,11 @@ int main(){
 ```
 #### Output:
 
-![Alt text](../Unguided2.1.png)
+![Alt text](Unguided2.1.png)
 
-![Alt text](../Unguided2.2.png)
+![Alt text](Unguided2.2.png)
 
-![Alt text](../Unguided2.3.png)
+![Alt text](Unguided2.3.png)
 
 Program diatas merupakan implementasi antrian (queue) menggunakan struktur data linked list dalam bahasa C++. Program ini mendefinisikan sebuah struct `node` yang merepresentasikan setiap elemen antrian, berisi atribut `NamaMhs_135`, `Nim_135`, dan pointer `next` yang menunjuk ke elemen berikutnya. Dua pointer global `front` dan `back` digunakan untuk melacak elemen pertama dan terakhir dalam antrian. Program dimulai dengan menginisialisasi `front` dan `back` ke `NULL`, menandakan bahwa antrian kosong.
 
