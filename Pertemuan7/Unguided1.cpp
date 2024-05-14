@@ -30,7 +30,7 @@ void TambahData_135(string name_135){
     node *baru = new node; //tambah node baru
     baru->nama_135 = name_135; //node baru berisi variabel name_135
     baru->next = NULL; //next dari node baru adalah NULL
-    if(isEmpty_151() == true){ //jika antrian kosong, maka lanjutkan
+    if(isEmpty_135() == true){ //jika antrian kosong, maka lanjutkan
         front = back = baru; //node baru sebagai front dan back
         back->next = NULL; //node selanjutnya dari node baru adalah NULL
     } else if(isEmpty_135() == false){ //jika antrian tidak kosong, maka lanjutkan
@@ -85,7 +85,7 @@ void LihatAntrian_135(){
     bantu = front; //node bantu sebagai front
     if(isEmpty_135() == true){ //jika antrian kosong, maka tampilkan "Antrian kosong!" 
         cout << "Antrian kosong!" << endl; 
-    } else if(isEmpty_151() == false){ //jika antrian tidak kosong, maka lanjutkan
+    } else if(isEmpty_135() == false){ //jika antrian tidak kosong, maka lanjutkan
         cout << "======== Antrian saat ini ========" << endl;  
         int NomorAntrian_135 = 1; //inisialisasi variabel NomorAntrian_135 dengan nilai 1
         while(bantu != NULL){ //jika node bantu bukan NULL, maka ulangi
@@ -99,9 +99,9 @@ void LihatAntrian_135(){
 
 int main(){
     //Menambah 3 data nama kedalam antrian
-    TambahData_151("Amelia");
-    TambahData_151("Indi");
-    TambahData_151("Ayu");
+    TambahData_135("Amelia");
+    TambahData_135("Indi");
+    TambahData_135("Ayu");
 
     //Menampilkan data yang sudah ditambahkan
     LihatAntrian_135();
