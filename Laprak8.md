@@ -35,6 +35,7 @@ Proses searching akan dihentikan jika terpenuhi 2 (dua) kondisi:
 2. Jika sudah tidak ada lagi data yang harus diperiksa.
 
 Contoh Binary Search :
+
 ![Alt text](<BINARY SEARCH.png>)
 
 ## Guided 
