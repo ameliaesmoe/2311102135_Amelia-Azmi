@@ -34,17 +34,6 @@ Proses searching akan dihentikan jika terpenuhi 2 (dua) kondisi:
 1. Jika data yang dicari sudah ditemukan.
 2. Jika sudah tidak ada lagi data yang harus diperiksa.
 
-Algoritma pencarian biner dapat dituliskan sebagai berikut :
-1) L􏰀0
-2) R􏰀N–1
-3) ketemu 􏰀 false
-4) Selama (L <= R) dan (tidak ketemu) kerjakan baris 5 sampai dengan 8
-5) m􏰀(L+R)/2 Praktikum Struktur Data dan Algoritma 3
-6) Jika (Data[m] = x) maka ketemu 􏰀 true
-7) Jika(x<Data[m])makaR􏰀m–1
-8) Jika(x>Data[m])makaL 􏰀m+1
-9) Jika (ketemu) maka m adalah indeks dari data yang dicari, jika tidak data tidak ditemukan
-
 Contoh Binary Search :
 ![Alt text](<BINARY SEARCH.png>)
 
