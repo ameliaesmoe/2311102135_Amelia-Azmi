@@ -15,12 +15,38 @@ d. Apabila data sama dengan yang dicari, berarti data telah berhasil di temukan.
 Urutan Algoritma Sequential Searching:
 1. i <- 0
 2. Ketemu <- false
-3. Selama ( tidak ketemu ) dan ( i < N ) kerjakan
-baris 4
-4. Jika ( Data[i] = key ) maka ketemu <- true
-Jika tidak i <- i + 1
-5. Jika ( Ketemu ) maka i adalah indeks dari data
-yang dicari
+3. Selama ( tidak ketemu ) dan ( i < N ) kerjakan baris 4
+4. Jika ( Data[i] = key ) maka ketemu <- true Jika tidak i <- i + 1
+5. Jika ( Ketemu ) maka i adalah indeks dari data yang dicari
+
+Berikut adalah contoh soal untuk pencarian sekuensial beserta penjelasannya:
+
+Int A[6] = {13, 87, 14, 21, 75, 53}
+
+![Alt text](<Sequential Search.png>)
+
+~ Misal nilai yang dicari adalah X = 21, maka elemen yang diperiksa adalah 13, 87, 14, 21. (ditemukan) Jadi indeks larik yang dikembalikan : I = 3
+~ Misal nilai yang dicari adalah X = 15, maka elemen yang diperiksa adalah 13, 87, 14, 21, 75, 53. (tidak ditemukan) Jadi indeks larik yang dikembalikan : I = 0
+
+#### Binary Search 
+Binary Search merupakan sebuah teknik pencarian data dengancara berulang kali membagi separuh dari jumlah data yang dicari sampai sehingga memperkecil lokasi pencarian menjadi satu data. Algotihma ini biasanya banyak digunakan untuk mencari di program dengan jumlah data yang banyak, dimana kompleksitas dari algorithma ini adalah Ο(log n) di mana n adalah jumlah item. Pada saat menggunakan binary search, data yang berada di dalam array harus diurutkan terlebih dahulu.mencari data pada posisi ekstrem (awal, akhir dan tengah deretan). Syaratnya : data harus sudah dalam keadaan terurut.
+Proses searching akan dihentikan jika terpenuhi 2 (dua) kondisi:
+1. Jika data yang dicari sudah ditemukan.
+2. Jika sudah tidak ada lagi data yang harus diperiksa.
+
+Algoritma pencarian biner dapat dituliskan sebagai berikut :
+1) L􏰀0
+2) R􏰀N–1
+3) ketemu 􏰀 false
+4) Selama (L <= R) dan (tidak ketemu) kerjakan baris 5 sampai dengan 8
+5) m􏰀(L+R)/2 Praktikum Struktur Data dan Algoritma 3
+6) Jika (Data[m] = x) maka ketemu 􏰀 true
+7) Jika(x<Data[m])makaR􏰀m–1
+8) Jika(x>Data[m])makaL 􏰀m+1
+9) Jika (ketemu) maka m adalah indeks dari data yang dicari, jika tidak data tidak ditemukan
+
+Contoh Binary Search :
+![Alt text](<BINARY SEARCH.png>)
 
 ## Guided 
 
