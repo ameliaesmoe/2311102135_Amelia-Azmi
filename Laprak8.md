@@ -195,4 +195,4 @@ Program ini merupakan implementasi dari algoritma pengurutan seleksi (selection 
 [2] Kartiko Ardi Widodo , Suryo Adi Wibowo, dan Nurlaily Vendyansyah. 2021. PENERAPAN SEQUENTIAL SEARCH UNTUK
 PENGELOLAAN DATA BARANG. Malang.
 
-[3] 
+[3] .........
