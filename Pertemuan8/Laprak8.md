@@ -175,9 +175,73 @@ Program ini merupakan implementasi dari algoritma pengurutan seleksi (selection 
 ### 1. [Buatlah sebuah program untuk mencari sebuh huruf pada sebuah kalimat yang sudah diinput dengan menggunakan binary search]
 
 ```C++
+#include <iostream>
+#include <string>
 
+using namespace std;
+// Fungsi untuk mengurutkan karakter dalam string menggunakan Bubble Sort
+void bubble_sort(string &kalimat_135)
+{
+    int n = kalimat_135.size();
+    // Perulangan untuk setiap elemen dalam string
+    for (int i = 0; i < n - 1; ++i)
+    {
+        for (int j = 0; j < n - i - 1; ++j)
+        {
+            if (kalimat_135[j] > kalimat_135[j + 1])
+            {
+                swap(kalimat_135[j], kalimat_135[j + 1]);
+            }
+        }
+    }
+}
+// Fungsi untuk mencari karakter dalam string yang sudah diurutkan
+void binary_search(const string &kalimat_135, char cari_135)
+{
+    bool ditemukan = false;
+    cout << "Kata setelah diurutkan: " << kalimat_135 << endl;
+    cout << "Huruf '" << cari_135 << "' ditemukan pada indeks ke: ";
+    // Perulangan untuk mencari huruf dalam string
+    for (size_t i = 0; i < kalimat_135.size(); ++i)
+    {
+        if (kalimat_135[i] == cari_135)
+        {
+            ditemukan = true;
+            cout << i << " ";
+        }
+    }
+    cout << endl;
+    // percabangan jika tidak menemukan huruf pada kata
+    if (!ditemukan)
+    {
+        cout << "Huruf '" << cari_135 << "' tidak ditemukan dalam kalimat." << endl;
+    }
+}
+
+int main()
+{
+    string kalimat_135;
+    char cari_135;
+
+    cout << "Masukkan kalimat: ";
+    getline(cin, kalimat_135);
+
+    // Urutkan kalimat menggunakan bubble sort
+    bubble_sort(kalimat_135);
+    cout << "Kalimat setelah diurutkan: " << kalimat_135 << endl;
+
+    cout << "Masukkan huruf yang ingin Anda cari: ";
+    cin >> cari_135;
+
+    // Cari huruf dalam kalimat menggunakan binary search
+    binary_search(kalimat_135, cari_135);
+
+    return 0;
+}
 ```
 #### Output:
+
+![Alt text](Unguided1.png)
 
 
 
@@ -186,10 +250,40 @@ Program ini merupakan implementasi dari algoritma pengurutan seleksi (selection 
 ### 2. [Buatlah sebuha program yang dapat menghitung banyaknya huruf vocal dalam sebuah kalimat]
 
 ```C++
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    // variable kalimat dan total vokal huruf
+    string kalimat_135;
+    int jumlahVokal_135 = 0;
+
+    cout << "Masukkan kalimat: ";
+    getline(cin, kalimat_135);
+    // perulangan apakah huruf dan kalimat sama atau tidak
+    for (char huruf_135 : kalimat_135)
+    {
+        if (huruf_135 == 'a' || huruf_135 == 'e' || huruf_135 == 'i' || huruf_135 == 'o' || huruf_135 == 'u' ||
+            huruf_135 == 'A' || huruf_135 == 'E' || huruf_135 == 'I' || huruf_135 == 'O' || huruf_135 == 'U')
+        {
+            jumlahVokal_135++;
+        }
+    }
+
+    cout << "Kalimat: " << kalimat_135 << endl;
+
+    cout << "\nJumlah huruf vokal dalam kalimat: " << jumlahVokal_135 << endl;
+
+    return 0;
+}
 
 ```
 #### Output:
 
+![Alt text](Unguided2.png)
 
 
 ### 3. [diketahui data=9,4,1,4,7,10,5,4,12,4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma squential search!]
@@ -209,7 +303,6 @@ Program ini merupakan implementasi dari algoritma pengurutan seleksi (selection 
 
 [1] Wafiqah Setyawati Wahyuni, Septi Andryana, Ben Rahman. 2022. PENGGUNAAN ALGORITMA SEQUENTIAL SEARCHING PADA APLIKASI PERPUSTAKAAN BERBASIS WEB. Jakarta Selatan.
 
-[2] Kartiko Ardi Widodo , Suryo Adi Wibowo, dan Nurlaily Vendyansyah. 2021. PENERAPAN SEQUENTIAL SEARCH UNTUK
-PENGELOLAAN DATA BARANG. Malang.
+[2] Kartiko Ardi Widodo , Suryo Adi Wibowo, dan Nurlaily Vendyansyah. 2021. PENERAPAN SEQUENTIAL SEARCH UNTUK PENGELOLAAN DATA BARANG. Malang.
 
 [3] .........
