@@ -243,9 +243,15 @@ int main()
 
 ![Alt text](Unguided1.png)
 
+Program diatas adalah sebuah aplikasi berbasis C++ yang mengurutkan karakter dalam sebuah string menggunakan algoritma Bubble Sort dan kemudian mencari keberadaan karakter tertentu dalam string yang sudah diurutkan tersebut. Program ini dimulai dengan memasukkan header `#include <iostream>` dan `#include <string>` untuk memungkinkan penggunaan input-output dan operasi string, serta menggunakan `namespace std` untuk menyederhanakan penggunaan fungsi-fungsi standar C++.
 
+Fungsi pertama dalam program ini adalah `bubble_sort`, yang bertujuan untuk mengurutkan karakter dalam string `kalimat_135` menggunakan algoritma Bubble Sort. Fungsi ini mengambil parameter referensi `string` sehingga perubahan yang dilakukan pada string akan berdampak langsung pada string asli yang diberikan. Algoritma Bubble Sort bekerja dengan melakukan iterasi berulang kali melalui string, membandingkan setiap pasangan karakter berdekatan, dan menukarnya jika mereka berada dalam urutan yang salah. Proses ini diulangi sampai seluruh string terurut.
 
+Fungsi kedua adalah `binary_search`, yang meskipun namanya menyiratkan penggunaan algoritma pencarian biner, sebenarnya melakukan pencarian linier untuk menemukan semua kemunculan karakter `cari_135` dalam string yang sudah diurutkan `kalimat_135`. Fungsi ini pertama-tama mencetak string yang sudah diurutkan, kemudian mencari karakter `cari_135` dengan iterasi melalui setiap karakter dalam string. Jika karakter yang dicari ditemukan, indeksnya dicetak. Jika karakter tersebut tidak ditemukan, pesan yang sesuai akan ditampilkan.
 
+Dalam fungsi `main`, program meminta pengguna untuk memasukkan sebuah kalimat. Kalimat ini kemudian diurutkan menggunakan fungsi `bubble_sort`, dan hasilnya ditampilkan. Setelah itu, pengguna diminta memasukkan karakter yang ingin dicari dalam kalimat yang sudah diurutkan. Fungsi `binary_search` kemudian dipanggil untuk mencari dan mencetak indeks kemunculan karakter tersebut, atau memberikan pesan jika karakter tidak ditemukan.
+
+Secara keseluruhan, program ini menunjukkan cara dasar untuk mengurutkan dan mencari karakter dalam string dengan menggunakan algoritma sederhana di C++. Meskipun fungsi pencarian karakter dinamai `binary_search`, fungsinya sebenarnya adalah pencarian linier yang lebih sesuai untuk konteks penggunaannya di sini.
 
 ### 2. [Buatlah sebuha program yang dapat menghitung banyaknya huruf vocal dalam sebuah kalimat]
 
