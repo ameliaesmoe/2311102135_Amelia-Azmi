@@ -296,15 +296,72 @@ Program diatas merupakan sebuah aplikasi berbasis C++ yang menghitung jumlah hur
 ### 3. [diketahui data=9,4,1,4,7,10,5,4,12,4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma squential search!]
 
 ```C++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // Jumlah elemen dalam array
+    const int n = 10;
+
+    // Array berisi data yang akan dicari
+    int data_135[n] = {9, 4, 1, 4, 7, 10, 5, 4, 12, 4};
+
+    // Variabel untuk menghitung jumlah kemunculan angka yang dicari
+    int jumlah_135 = 0;
+
+    // Variabel untuk menyimpan angka yang akan dicari
+    int cari_135;
+
+    // Proses pencarian
+    cout << "=============================================\n";
+    cout << "Program Sequential Search" << endl;
+    cout << "Data: {9, 4, 1, 4, 7, 10, 5, 4, 12, 4}" << endl;
+    cout << "=============================================\n";
+
+    // Meminta input angka yang akan dicari
+    cout << "Masukkan angka yang ingin dicari: ";
+    cin >> cari_135;
+
+    // Perulangan untuk mencari nilai pada data dengan mencocokkan data dengan angka yang dicari
+    for (int i = 0; i < n; i++)
+    {
+        if (data_135[i] == cari_135)
+        {
+            jumlah_135++;
+        }
+    }
+
+    // Output hasil pencarian
+    cout << "=============================================\n";
+    if (jumlah_135 > 0)
+    {
+        cout << "Angka '" << cari_135 << "' ditemukan sebanyak " << jumlah_135 << " kali pada data." << endl;
+    }
+    else
+    {
+        cout << "Angka '" << cari_135 << "' tidak ditemukan pada data tersebut." << endl;
+    }
+    cout << "=============================================\n";
+
+    return 0;
+}
 
 ```
 #### Output:
 
+![Alt text](Unguided3.png)
 
+Program diatas merupakan implementasi sederhana dari algoritma pencarian berurutan (sequential search) pada sebuah array di bahasa pemrograman C++. Pada awal program, terdapat deklarasi dan inisialisasi variabel, termasuk konstanta `n` yang menyatakan jumlah elemen dalam array `data_135`, yang diinisialisasi dengan sepuluh nilai integer. Program kemudian mendeklarasikan variabel `jumlah_135` untuk menghitung jumlah kemunculan angka yang dicari, serta variabel `cari_135` untuk menyimpan angka yang akan dicari. 
+
+Selanjutnya, program menampilkan informasi pengantar mengenai tujuan dan data yang akan digunakan melalui perintah `cout`. Setelah itu, program meminta pengguna untuk memasukkan angka yang ingin dicari di dalam array `data_135` menggunakan `cin`. Proses pencarian dilakukan dengan menggunakan loop `for` yang memeriksa setiap elemen dalam array. Jika elemen array sama dengan angka yang dicari, variabel `jumlah_135` akan bertambah satu.
+
+Setelah loop selesai, program menampilkan hasil pencarian. Jika variabel `jumlah_135` lebih dari nol, program mencetak jumlah kemunculan angka yang dicari dalam array. Sebaliknya, jika `jumlah_135` sama dengan nol, program mencetak bahwa angka tersebut tidak ditemukan dalam array. Program berakhir dengan perintah `return 0;` yang menunjukkan bahwa program telah selesai dieksekusi dengan sukses. Program ini secara keseluruhan berfungsi untuk menghitung dan menampilkan berapa kali angka yang dimasukkan oleh pengguna muncul dalam array `data_135`, dengan output yang jelas dan informatif mengenai hasil pencarian tersebut.
 
 
 ## Kesimpulan
 
+Sequential Search adalah metode pencarian yang membandingkan setiap elemen satu per satu dari awal hingga akhir array. Cocok untuk data yang tidak terurut. Binary Search adalah metode pencarian yang membagi setengah dari data yang dicari setiap kali. Hanya berlaku untuk data yang sudah terurut. Dalam contoh implementasi sederhana menggunakan bahasa C++, Sequential Search digunakan untuk mencari sebuah nilai dalam array. Program melakukan iterasi melalui array dan membandingkan setiap elemen dengan nilai yang dicari. Jika ditemukan, program menghentikan pencarian. Implementasi binary search juga dilakukan dalam bahasa C++, dimana array harus diurutkan terlebih dahulu sebelum pencarian dilakukan. Program membagi array menjadi dua bagian setiap kali, dan mencari nilai yang dicari dalam salah satu bagian array.
 
 ## Referensi
 
@@ -312,4 +369,4 @@ Program diatas merupakan sebuah aplikasi berbasis C++ yang menghitung jumlah hur
 
 [2] Kartiko Ardi Widodo , Suryo Adi Wibowo, dan Nurlaily Vendyansyah. 2021. PENERAPAN SEQUENTIAL SEARCH UNTUK PENGELOLAAN DATA BARANG. Malang.
 
-[3] .........
+[3] Markuci, D., & Prianto, C. 2022. Analisis Perbandingan Penggunaan Algoritma Sequential Search dan Binary Search pada Aplikasi Surat Perjalanan Dinas. Jurnal Informatika dan Komputer, 6(1), 110.
