@@ -24,19 +24,22 @@ Pohon ( tree) adalah graph terhubung yang tidak mengandung sirkuit. Pohon (tree)
 Jenis pohon dalam sturktur data sebagai berikut :
 
 a. Full binary tree
+
 Binary tree yang tiap nodenya memiliki satu root dan dua  root.
 
 ![Alt text](<Tree 1.1.png>)
 
 b. Complete binary tree
+
 Pohon ini mirip dengan Full Bianry Tree, namun pada tiap sub tree boleh memiliki panjang path yang berbeda node kecuali leaf yang meiliki 0 atau 2 anak.
 
-![Alt text](<tree 1.2.png>)
+![Alt text](<Tree 1.2.png>)
 
 c. Skewed binary tree
+
 Pohon yang semua nodenya kecuali daun hanya memiliki satu anak (child).
 
-![Alt text](<tree 1.3.png>)
+![Alt text](<Tree 1.3.png>)
 
 Struktur data tree dapat dirangkum sebagai berikut :
 
@@ -44,14 +47,23 @@ Struktur data tree dapat dirangkum sebagai berikut :
 
 Operasi pada Tree
 a. Create: digunakan untuk membentuk binary tree baru yang masih kosong.
+
 b. Clear: digunakan untuk mengosongkan binary tree yang sudah ada ataumenghapus semua node pada binary tree.
+
 c. isEmpty: digunakan untuk memeriksa apakah binary tree masih kosong atau tidak.
+
 d. Insert: digunakan untuk memasukkan sebuah node kedalam tree.
+
 e. Find: digunakan untuk mencari root, parent, left child, atau right child dari suatu node dengan syarat tree tidak boleh kosong.
+
 f. Update: digunakan untuk mengubah isi dari node yang ditunjuk oleh pointer current dengan syarat tree tidak boleh kosong.
+
 g. Retrive: digunakan untuk mengetahui isi dari node yang ditunjuk pointer current dengan syarat tree tidak boleh kosong.
+
 h. Delete Sub: digunakan untuk menghapus sebuah subtree (node beserta seluruh descendant-nya) yang ditunjuk pointer current dengan syarat tree tidak boleh kosong.
+
 i. Characteristic: digunakan untuk mengetahui karakteristik dari suatu tree. Yakni size, height, serta average lenght-nya.
+
 j. Traverse: digunakan untuk mengunjungi seluruh node-node pada tree dengan cara traversal. Terdapat 3 metode traversal yang dibahas dalam modul ini yakni Pre-Order, In-Order, dan Post-Order.
 
 
