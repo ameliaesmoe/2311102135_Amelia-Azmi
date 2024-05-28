@@ -45,7 +45,8 @@ Struktur data tree dapat dirangkum sebagai berikut :
 
 ![Alt text](<Tree 1.4.png>)
 
-Operasi pada Tree
+Operasi pada Tree :
+
 a. Create: digunakan untuk membentuk binary tree baru yang masih kosong.
 
 b. Clear: digunakan untuk mengosongkan binary tree yang sudah ada ataumenghapus semua node pada binary tree.
@@ -426,35 +427,35 @@ Dalam fungsi `main`, program membuat pohon dengan root 'A' dan menambahkan beber
 using namespace std;
 
 // Fungsi untuk mencetak header matriks
-void printHeader(const vector<string> &simpul, int n)
+void printHeader(const vector<string> &simpul_2311102135, int n)
 {
     cout << setw(15) << " ";
     for (int i = 0; i < n; i++)
     {
-        cout << setw(15) << simpul[i];
+        cout << setw(15) << simpul_2311102135[i];
     }
     cout << endl;
 }
 
 // Fungsi untuk mencetak baris matriks ketetanggaan
-void printRows(const vector<string> &simpul, const vector<vector<int>> &busur, int n)
+void printRows(const vector<string> &simpul_2311102135, const vector<vector<int>> &busur_2311102135, int n)
 {
     for (int i = 0; i < n; i++)
     {
-        cout << setw(15) << simpul[i];
+        cout << setw(15) << simpul_2311102135[i];
         for (int j = 0; j < n; j++)
         {
-            cout << setw(15) << busur[i][j];
+            cout << setw(15) << busur_2311102135[i][j];
         }
         cout << endl;
     }
 }
 
 // Fungsi untuk menampilkan graf berdasarkan matriks ketetanggaan
-void tampilGraph(const vector<string> &simpul, const vector<vector<int>> &busur, int n)
+void tampilGraph(const vector<string> &simpul_2311102135, const vector<vector<int>> &busur_2311102135, int n)
 {
-    printHeader(simpul, n);
-    printRows(simpul, busur, n);
+    printHeader(simpul_2311102135, n);
+    printRows(simpul_2311102135, busur_2311102135, n);
 }
 
 int main()
@@ -469,17 +470,17 @@ int main()
     cin >> n;
 
     // Deklarasi vektor untuk menyimpan nama simpul
-    vector<string> simpul(n);
+    vector<string> simpul_2311102135(n);
 
     // Meminta input nama simpul dari pengguna
     for (int i = 0; i < n; i++)
     {
         cout << "Nama simpul " << i + 1 << " : ";
-        cin >> simpul[i];
+        cin >> simpul_2311102135[i];
     }
 
     // Deklarasi vektor dua dimensi untuk menyimpan bobot antar simpul matriks ini akan menyimpan bobot untuk setiap pasangan simpul
-    vector<vector<int>> busur(n, vector<int>(n, 0));
+    vector<vector<int>> busur_2311102135(n, vector<int>(n, 0));
 
     // Mencetak prompt untuk meminta input bobot antar simpul
     cout << "Silakan masukkan bobot antar simpul" << endl;
@@ -489,24 +490,27 @@ int main()
     {
         for (int j = 0; j < n; j++)
         {
-            cout << simpul[i] << "--> " << simpul[j] << " = ";
-            cin >> busur[i][j];
+            cout << simpul_2311102135[i] << "--> " << simpul_2311102135[j] << " = ";
+            cin >> busur_2311102135[i][j];
         }
     }
 
     // Memanggil fungsi tampilGraph untuk menampilkan representasi matriks ketetanggaan dari graf yang telah diinput
-    tampilGraph(simpul, busur, n);
+    tampilGraph(simpul_2311102135, busur_2311102135, n);
 
     return 0;
 }
 ```
 #### Output:
 
+![Alt text](<screenshoot unguided 1.png>)
+
 Program diatas merupakan program C++ yang bertujuan untuk merepresentasikan dan menampilkan sebuah graf berbobot menggunakan matriks ketetanggaan. Langkah pertama dalam program ini adalah meminta pengguna untuk memasukkan jumlah simpul (nodes) dalam graf. Setelah menerima jumlah simpul, program kemudian meminta pengguna untuk memasukkan nama-nama dari setiap simpul tersebut. Nama-nama ini disimpan dalam sebuah vektor. Kemudian nama-nama  pada simpul dimasukkan, selanjutnya  progam meminta pengguna untuk memasukkan bobot antar simpul, yang mewakili hubungan atau busur (edges) di antara simpul-simpul tersebut. Bobot-bobot ini disimpan dalam sebuah matriks dua dimensi yang dikenal sebagai matriks ketetanggaan, di mana setiap elemen dari matriks menunjukkan bobot antara pasangan simpul tertentu. Setelah semua data yang diperlukan dimasukkan, program kemudian menggunakan dua fungsi bantu, `printHeader` dan `printRows`, untuk menampilkan matriks ketetanggaan tersebut. Fungsi `printHeader` bertugas mencetak header dari matriks, yaitu baris pertama yang berisi nama-nama simpul. Fungsi `printRows` bertugas mencetak setiap baris dari matriks ketetanggaan, di mana setiap baris diawali dengan nama simpul dan diikuti dengan bobot hubungan ke simpul-simpul lainnya. Seluruh proses menampilkan matriks ketetanggaan ini dikendalikan oleh fungsi `tampilGraph`, yang memanggil `printHeader` dan `printRows` secara berurutan untuk menampilkan matriks secara lengkap dan terstruktur. Dengan cara ini, pengguna dapat dengan mudah melihat representasi graf dalam bentuk matriks ketetanggaan, yang memvisualisasikan bobot antar simpul dengan jelas dan rapi.
 
 ### 2. [Modifikasi guided tree diatas dengan program menu menggunakan input data tree dari user dan berikan fungsi tambahan untuk menampilkan node child dan descendant dari node yang diinput kan!]
 
 ```C++
+
 
 ```
 #### Output:
@@ -516,6 +520,9 @@ Program diatas merupakan program C++ yang bertujuan untuk merepresentasikan dan 
 
 ## Kesimpulan
 
+Graf dan pohon adalah konsep fundamental dalam teori graf dan struktur data yang memiliki aplikasi luas dalam ilmu komputer. Graf adalah representasi grafis yang melibatkan sekumpulan objek yang dilambangkan dengan simpul (vertex) dan relasi antar objek yang dilambangkan dengan rusuk (edge). Berdasarkan keberadaan gelang atau sisi ganda, graf dibedakan menjadi graf sederhana yang tidak mengandung gelang maupun sisi ganda, dan graf tak sederhana yang dapat mengandung sisi ganda atau gelang. Selain itu, berdasarkan orientasi arah pada sisinya, graf dibagi menjadi graf tak berarah, di mana urutan pasangan simpul tidak diperhatikan, dan graf berarah, di mana urutan pasangan simpul diperhatikan dan diberikan orientasi arah.
+
+Pohon (tree) adalah jenis khusus dari graf yang terhubung tanpa mengandung sirkuit, dan menggambarkan hubungan hierarkis antar elemen. Terdapat berbagai jenis pohon seperti full binary tree, di mana setiap nodenya memiliki satu root dan dua anak; complete binary tree, yang mirip dengan full binary tree tetapi memperbolehkan sub-tree dengan panjang path berbeda kecuali leaf; dan skewed binary tree, di mana semua nodenya kecuali daun hanya memiliki satu anak. Berbagai operasi dapat dilakukan pada pohon, termasuk membentuk, mengosongkan, memeriksa kekosongan, memasukkan node, mencari elemen, mengubah isi node, mengetahui isi node, menghapus subtree, mengetahui karakteristik pohon, dan mengunjungi seluruh node dengan metode traversal seperti Pre-Order, In-Order, dan Post-Order. Kedua struktur ini memainkan peran penting dalam pengelolaan dan manipulasi data di berbagai aplikasi komputasi.
 
 ## Referensi
 
