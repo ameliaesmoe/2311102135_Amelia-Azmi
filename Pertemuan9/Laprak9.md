@@ -349,8 +349,7 @@ Dalam fungsi `main`, program membuat pohon dengan root 'A' dan menambahkan beber
 
 ## Unguided 
 
-### 1. [Buatlah program graph dengan menggunakan inputan user untuk menghitung
-jarak dari sebuah kota ke kota lainnya]
+### 1. [Buatlah program graph dengan menggunakan inputan user untuk menghitung jarak dari sebuah kota ke kota lainnya]
 
 ![Alt text](Unguided1.png)
 
