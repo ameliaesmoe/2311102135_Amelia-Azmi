@@ -359,9 +359,7 @@ Dalam fungsi `main`, program membuat pohon dengan root 'A' dan menambahkan beber
 #### Output:
 
 
-### 2. [Modifikasi guided tree diatas dengan program menu menggunakan input data
-tree dari user dan berikan fungsi tambahan untuk menampilkan node child dan
-descendant dari node yang diinput kan!]
+### 2. [Modifikasi guided tree diatas dengan program menu menggunakan input data tree dari user dan berikan fungsi tambahan untuk menampilkan node child dan descendant dari node yang diinput kan!]
 
 ```C++
 
@@ -377,7 +375,3 @@ descendant dari node yang diinput kan!]
 ## Referensi
 
 [1] Wafiqah Setyawati Wahyuni, Septi Andryana, Ben Rahman. 2022. PENGGUNAAN ALGORITMA SEQUENTIAL SEARCHING PADA APLIKASI PERPUSTAKAAN BERBASIS WEB. Jakarta Selatan.
-
-[2] Kartiko Ardi Widodo , Suryo Adi Wibowo, dan Nurlaily Vendyansyah. 2021. PENERAPAN SEQUENTIAL SEARCH UNTUK PENGELOLAAN DATA BARANG. Malang.
-
-[3] Markuci, D., & Prianto, C. 2022. Analisis Perbandingan Penggunaan Algoritma Sequential Search dan Binary Search pada Aplikasi Surat Perjalanan Dinas. Jurnal Informatika dan Komputer, 6(1), 110.
