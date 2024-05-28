@@ -3,6 +3,58 @@
 
 ## Dasar Teori
 
+#### Graph
+
+Graf adalah representasi grafik yang melibatkan sekumpulan objek yang dilambangkan dengan simpul atau verteks, dan relasi-relasi biner antar objek-objek diskret tersebut yang dilambangkan dengan rusuk atau sisi atau edge. Berdasarkan ada tidaknya gelang atau sisi ganda pada suatu graf, graf dapat digolongkan menjadi dua jenis:
+
+1. Graf Sederhana
+Graf sederhana adalah graf yang tidak mengandung gelang maupun sisi ganda. Contoh graf sederhan direfresentasikan dengan jaringan computer.Pada graf sederhan sisi merupakan pasangan tak terurut, Jadi sisi (u,v) sama saja dengan (v,u).
+2. Graf tak Sederhana
+Graf tak sederhana adalah graf yang mengndung sisi ganda atau gelang. Graf sederhana dibagi menjadi dua macam, yaitu gaf ganda dan graf semu. Graf ganda adalah graf yang mengnadung sisi ganda. Sedangkan graf semu adalah graf yang mengandung gelang. Sisi pada graf semu dapat terhubung ke dirinya sendiri.
+
+Berdasarkan orientasi arah pada sisi, maka graf dibedakan menjadi dua jenis:
+
+1. Graf Tak Berarah
+Graf Tak Berarah adalah graf yang sisinya tidak mempunyai orientasi arah. Urutan pasangan simpul pada graf beraaah tidak diperhatikan, jadi sisi (u,v) sama dengan (v,u). contoh graf tak berarah dalam kehidupan sehari hari adalah jaringan pada saluran secara dua arah.
+2. Graf Berarah
+Graf Berarah adalah graf yang setiap ssinya diberikan orientasi arah. Sisi sisinya yang berarah ini biasa disebut busur. Pada graf berarah, sisi(u,v) tidak sama dengan (v,u). untuk busur (u,v), simpul u merupakan simpul terminal. Dalam kehidupan sehari- hari, garaf berarah biasa sring dipakai untuk menggambarkan aliran suatu proses
+
+#### Tree
+Pohon ( tree) adalah graph terhubung yang tidak mengandung sirkuit. Pohon (tree) merupakan stuktur data yang tidak linier yang digambarkan dengan hubungan yang bersifat hirarkis antar satu elemen (Teddy Marcus; 2005).
+Jenis pohon dalam sturktur data sebagai berikut :
+
+a. Full binary tree
+Binary tree yang tiap nodenya memiliki satu root dan dua  root.
+
+![Alt text](<Tree 1.1.png>)
+
+b. Complete binary tree
+Pohon ini mirip dengan Full Bianry Tree, namun pada tiap sub tree boleh memiliki panjang path yang berbeda node kecuali leaf yang meiliki 0 atau 2 anak.
+
+![Alt text](<tree 1.2.png>)
+
+c. Skewed binary tree
+Pohon yang semua nodenya kecuali daun hanya memiliki satu anak (child).
+
+![Alt text](<tree 1.3.png>)
+
+Struktur data tree dapat dirangkum sebagai berikut :
+
+![Alt text](<Tree 1.4.png>)
+
+Operasi pada Tree
+a. Create: digunakan untuk membentuk binary tree baru yang masih kosong.
+b. Clear: digunakan untuk mengosongkan binary tree yang sudah ada ataumenghapus semua node pada binary tree.
+c. isEmpty: digunakan untuk memeriksa apakah binary tree masih kosong atau tidak.
+d. Insert: digunakan untuk memasukkan sebuah node kedalam tree.
+e. Find: digunakan untuk mencari root, parent, left child, atau right child dari suatu node dengan syarat tree tidak boleh kosong.
+f. Update: digunakan untuk mengubah isi dari node yang ditunjuk oleh pointer current dengan syarat tree tidak boleh kosong.
+g. Retrive: digunakan untuk mengetahui isi dari node yang ditunjuk pointer current dengan syarat tree tidak boleh kosong.
+h. Delete Sub: digunakan untuk menghapus sebuah subtree (node beserta seluruh descendant-nya) yang ditunjuk pointer current dengan syarat tree tidak boleh kosong.
+i. Characteristic: digunakan untuk mengetahui karakteristik dari suatu tree. Yakni size, height, serta average lenght-nya.
+j. Traverse: digunakan untuk mengunjungi seluruh node-node pada tree dengan cara traversal. Terdapat 3 metode traversal yang dibahas dalam modul ini yakni Pre-Order, In-Order, dan Post-Order.
+
+
 
 ## Guided 
 
@@ -41,7 +93,7 @@ int main () {
     return 0;
 }
 ```
-Program di atas merupakan implementasi dasar dari algoritma pencarian linier (sequential search) dalam bahasa pemrograman C++. Program ini dimulai dengan mendeklarasikan dan menginisialisasi beberapa variabel penting: `n` yang mewakili ukuran array, `data` yang merupakan array berisi sepuluh elemen integer, `cari` yang merupakan nilai yang ingin dicari dalam array, serta `ketemu`, sebuah variabel boolean yang digunakan untuk melacak apakah nilai yang dicari ditemukan dalam array. Nilai awal `ketemu` adalah `false`, menandakan bahwa nilai belum ditemukan. Variabel `i` digunakan sebagai indeks untuk iterasi. Dalam loop `for`, program melakukan iterasi melalui setiap elemen array dari indeks `0` hingga `n-1`. Pada setiap iterasi, program memeriksa apakah elemen saat ini (`data[i]`) sama dengan nilai `cari`. Jika ditemukan kesamaan, `ketemu` diubah menjadi `true` dan loop dihentikan menggunakan pernyataan `break` untuk menghindari iterasi yang tidak perlu. Setelah loop selesai, program mencetak pesan pembuka "Program Sequential Search" dan menampilkan isi array. Kemudian, program memeriksa nilai `ketemu` untuk menentukan hasil pencarian. Jika `ketemu` bernilai `true`, program mencetak bahwa angka yang dicari ditemukan pada indeks tertentu. Jika tidak, program mencetak bahwa angka tersebut tidak ditemukan dalam array. Program ini menggambarkan cara kerja pencarian linier yang sederhana namun efektif untuk dataset kecil, meskipun kurang efisien untuk dataset yang lebih besar karena memiliki kompleksitas waktu O(n).
+Program diatas merupakan implementasi dasar dari algoritma pencarian linier (sequential search) dalam bahasa pemrograman C++. Program ini dimulai dengan mendeklarasikan dan menginisialisasi beberapa variabel penting: `n` yang mewakili ukuran array, `data` yang merupakan array berisi sepuluh elemen integer, `cari` yang merupakan nilai yang ingin dicari dalam array, serta `ketemu`, sebuah variabel boolean yang digunakan untuk melacak apakah nilai yang dicari ditemukan dalam array. Nilai awal `ketemu` adalah `false`, menandakan bahwa nilai belum ditemukan. Variabel `i` digunakan sebagai indeks untuk iterasi. Dalam loop `for`, program melakukan iterasi melalui setiap elemen array dari indeks `0` hingga `n-1`. Pada setiap iterasi, program memeriksa apakah elemen saat ini (`data[i]`) sama dengan nilai `cari`. Jika ditemukan kesamaan, `ketemu` diubah menjadi `true` dan loop dihentikan menggunakan pernyataan `break` untuk menghindari iterasi yang tidak perlu. Setelah loop selesai, program mencetak pesan pembuka "Program Sequential Search" dan menampilkan isi array. Kemudian, program memeriksa nilai `ketemu` untuk menentukan hasil pencarian. Jika `ketemu` bernilai `true`, program mencetak bahwa angka yang dicari ditemukan pada indeks tertentu. Jika tidak, program mencetak bahwa angka tersebut tidak ditemukan dalam array. Program ini menggambarkan cara kerja pencarian linier yang sederhana namun efektif untuk dataset kecil, meskipun kurang efisien untuk dataset yang lebih besar karena memiliki kompleksitas waktu O(n).
 
 ### 2. [Program Tree]
 
@@ -351,13 +403,94 @@ Dalam fungsi `main`, program membuat pohon dengan root 'A' dan menambahkan beber
 
 ### 1. [Buatlah program graph dengan menggunakan inputan user untuk menghitung jarak dari sebuah kota ke kota lainnya]
 
-![Alt text](Unguided1.png)
+![Alt text](<Soal unguided1.png>)
 
 ```C++
+#include <iostream>
+#include <iomanip>
+#include <vector>
+#include <string>
 
+using namespace std;
+
+// Fungsi untuk mencetak header matriks
+void printHeader(const vector<string> &simpul, int n)
+{
+    cout << setw(15) << " ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << setw(15) << simpul[i];
+    }
+    cout << endl;
+}
+
+// Fungsi untuk mencetak baris matriks ketetanggaan
+void printRows(const vector<string> &simpul, const vector<vector<int>> &busur, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cout << setw(15) << simpul[i];
+        for (int j = 0; j < n; j++)
+        {
+            cout << setw(15) << busur[i][j];
+        }
+        cout << endl;
+    }
+}
+
+// Fungsi untuk menampilkan graf berdasarkan matriks ketetanggaan
+void tampilGraph(const vector<string> &simpul, const vector<vector<int>> &busur, int n)
+{
+    printHeader(simpul, n);
+    printRows(simpul, busur, n);
+}
+
+int main()
+{
+    // Mendeklarasikan variabel untuk menyimpan jumlah simpul
+    int n;
+
+    // Mencetak prompt untuk meminta input jumlah simpul
+    cout << "Silakan masukkan jumlah simpul: ";
+
+    // Membaca input jumlah simpul dari pengguna
+    cin >> n;
+
+    // Deklarasi vektor untuk menyimpan nama simpul
+    vector<string> simpul(n);
+
+    // Meminta input nama simpul dari pengguna
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Nama simpul " << i + 1 << " : ";
+        cin >> simpul[i];
+    }
+
+    // Deklarasi vektor dua dimensi untuk menyimpan bobot antar simpul matriks ini akan menyimpan bobot untuk setiap pasangan simpul
+    vector<vector<int>> busur(n, vector<int>(n, 0));
+
+    // Mencetak prompt untuk meminta input bobot antar simpul
+    cout << "Silakan masukkan bobot antar simpul" << endl;
+
+    // Meminta input bobot antar simpul dari pengguna
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cout << simpul[i] << "--> " << simpul[j] << " = ";
+            cin >> busur[i][j];
+        }
+    }
+
+    // Memanggil fungsi tampilGraph untuk menampilkan representasi matriks ketetanggaan dari graf yang telah diinput
+    tampilGraph(simpul, busur, n);
+
+    return 0;
+}
 ```
 #### Output:
 
+Program diatas merupakan program C++ yang bertujuan untuk merepresentasikan dan menampilkan sebuah graf berbobot menggunakan matriks ketetanggaan. Langkah pertama dalam program ini adalah meminta pengguna untuk memasukkan jumlah simpul (nodes) dalam graf. Setelah menerima jumlah simpul, program kemudian meminta pengguna untuk memasukkan nama-nama dari setiap simpul tersebut. Nama-nama ini disimpan dalam sebuah vektor. Kemudian nama-nama  pada simpul dimasukkan, selanjutnya  progam meminta pengguna untuk memasukkan bobot antar simpul, yang mewakili hubungan atau busur (edges) di antara simpul-simpul tersebut. Bobot-bobot ini disimpan dalam sebuah matriks dua dimensi yang dikenal sebagai matriks ketetanggaan, di mana setiap elemen dari matriks menunjukkan bobot antara pasangan simpul tertentu. Setelah semua data yang diperlukan dimasukkan, program kemudian menggunakan dua fungsi bantu, `printHeader` dan `printRows`, untuk menampilkan matriks ketetanggaan tersebut. Fungsi `printHeader` bertugas mencetak header dari matriks, yaitu baris pertama yang berisi nama-nama simpul. Fungsi `printRows` bertugas mencetak setiap baris dari matriks ketetanggaan, di mana setiap baris diawali dengan nama simpul dan diikuti dengan bobot hubungan ke simpul-simpul lainnya. Seluruh proses menampilkan matriks ketetanggaan ini dikendalikan oleh fungsi `tampilGraph`, yang memanggil `printHeader` dan `printRows` secara berurutan untuk menampilkan matriks secara lengkap dan terstruktur. Dengan cara ini, pengguna dapat dengan mudah melihat representasi graf dalam bentuk matriks ketetanggaan, yang memvisualisasikan bobot antar simpul dengan jelas dan rapi.
 
 ### 2. [Modifikasi guided tree diatas dengan program menu menggunakan input data tree dari user dan berikan fungsi tambahan untuk menampilkan node child dan descendant dari node yang diinput kan!]
 
@@ -374,4 +507,8 @@ Dalam fungsi `main`, program membuat pohon dengan root 'A' dan menambahkan beber
 
 ## Referensi
 
-[1] Wafiqah Setyawati Wahyuni, Septi Andryana, Ben Rahman. 2022. PENGGUNAAN ALGORITMA SEQUENTIAL SEARCHING PADA APLIKASI PERPUSTAKAAN BERBASIS WEB. Jakarta Selatan.
+[1] Edwin Leonardo, Tri Sutrisno, Dyah Erny Herwindiati. 2020. KLASIFIKASI EMPLOYABILITY MAHASISWA PENERIMA BEASISWA DI UNIVERSITAS TARUMANAGARA DENGAN GRAPH THEORY (MINIMUM SPANNING TREE). Universitas Tarunanegara : Jakarta.
+
+[2]. Fitri Latifah. 2022. PENERAPAN ALGORITHMA POHON UNTUK OPERASI PENGOLAHAN DAN PENYIMPANAN DATA DALAM TEKNIK PEMROGRAMAN (KAJIAN ALGORITHMA POHON PADA TEKNIK PEMROGRAMAN). Jakarta.
+
+[3] Susila Bahri, Ghazy Muhari Novrial, Narwen. 2023. PEMROGRAMAN PEWARNAAN GRAF PADA PENJADWALAN MATA KULIAH JURUSAN MATEMATIKA. Universitas Andalas.
