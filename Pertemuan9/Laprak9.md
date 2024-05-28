@@ -1224,8 +1224,17 @@ int main()
 ```
 #### Output:
 
+![Alt text](<screenshoot unguided 2.1.png>)
 
+![Alt text](<screenshoot unguided 2.2.png>)
 
+![Alt text](<screenshoot unguided 2.3.png>)
+
+![Alt text](<screenshoot unguided 2.4.png>)
+
+![Alt text](<screenshoot unguided 2.5.png>)
+
+Program diatas merupakan implementasi pohon biner dalam bahasa pemrograman C++. Program ini menyediakan berbagai fungsi untuk memanipulasi pohon biner, termasuk membuat root, menambah node, menghapus node, memperbarui data pada node, mencari node, dan menampilkan informasi terkait node serta pohon itu sendiri. Struktur data `Pohon` digunakan untuk merepresentasikan setiap node dalam pohon, yang menyimpan data karakter dan pointer ke anak kiri, anak kanan, dan parent node. Program dimulai dengan inisialisasi pohon melalui fungsi `init()` dan menyediakan pengecekan apakah pohon kosong melalui `isEmpty()`. Node baru dapat ditambahkan sebagai root menggunakan `buatNode()`, atau sebagai anak kiri atau kanan dari node tertentu menggunakan `insertLeft()` dan `insertRight()`. Fungsi `update()` memungkinkan perubahan data pada node tertentu, sedangkan `find()` digunakan untuk mencari node berdasarkan data. Program juga menyediakan berbagai jenis traversal pohon seperti pre-order, in-order, dan post-order melalui fungsi `PreOrder()`, `InOrder()`, dan `PostOrder()`. Fungsi `deleteSubtree()` dan `deleteNode()` digunakan untuk menghapus node dan subtree-nya, sedangkan `size()` dan `height()` menghitung jumlah node dan tinggi pohon. Program ini juga dapat menampilkan karakteristik pohon dan detail node tertentu termasuk parent, sibling, dan anak-anaknya. Fungsi utama (`main`) menyediakan antarmuka menu interaktif bagi pengguna untuk melakukan berbagai operasi pada pohon biner sesuai pilihan yang diberikan.
 
 ## Kesimpulan
 
