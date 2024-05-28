@@ -33,13 +33,13 @@ b. Complete binary tree
 
 Pohon ini mirip dengan Full Bianry Tree, namun pada tiap sub tree boleh memiliki panjang path yang berbeda node kecuali leaf yang meiliki 0 atau 2 anak.
 
-![Alt text](<Tree 1.2.png>)
+![Alt text](<tree 1.2.png>)
 
 c. Skewed binary tree
 
 Pohon yang semua nodenya kecuali daun hanya memiliki satu anak (child).
 
-![Alt text](<Tree 1.3.png>)
+![Alt text](skewed-trees-1024x421.png)
 
 Struktur data tree dapat dirangkum sebagai berikut :
 
